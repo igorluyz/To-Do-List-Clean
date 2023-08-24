@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.input-task{
+    border: none;
+    border-radius: 7px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 19px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    background-color: #003329;
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right; 
+    cursor: pointer;
+}
+
+.button-add-task:hover{
+    opacity: 0.8;
+}
+
+.button-add-task:active{
+    opacity: 0.6;
+}
+
+.list-tasks{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body{
+    background-image: url("./../images/background.png");
+}
+
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    /* Macete pra deixar o item centralizado */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 100px auto 0;
+}
+
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    background-color: #003329;
+    opacity: 1;
+    border-radius: 38px;
+    width: 380px;
+    /* height: 50px; */
+    margin: auto;
+    margin-top: 35px;
+}
+
+.footer-texto, .copyrigth{
+    font-size: 18px;
+    color: #d1d1d1;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .container{
+    max-width: 370px;
+    }
+   .input-task{
+    max-width: 220px;
+   }
+   .button-add-task{
+    padding-left: 10px;
+   }
+}
+
